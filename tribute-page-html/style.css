@@ -1,0 +1,51 @@
+body {
+  margin-top: 60px;
+  text-align: center;
+  background-color: #eee;
+}
+
+.image {
+  width:99%;
+  margin:auto;
+  background-color:#fff;
+  border-radius:3px;
+}
+
+.image-container {
+  width:70%;
+  margin:auto;
+  background-color:#fff;
+  border-radius:3px;
+}
+
+.image {
+  
+}
+
+.time-line {
+  text-align:left;
+  margin:auto;
+  width:70%;
+  font-size:12px;
+}
+
+.time-line-header {
+  padding-top:20px;
+  text-align:center;
+}
+
+.quote, .quote-name {
+  margin: auto;
+  width:70%;
+  text-align:left;
+  font-weight:lighter;
+}
+
+
+
+.closing {
+  margin: auto;
+  width: 70%;
+  text-align:left;
+  font-size: 30px;
+}
