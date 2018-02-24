@@ -1,5 +1,15 @@
-.header {
+body {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+}
 
+.header {
+  background-color: #333;
+  color: #fff;
+  font-size: 30px;
+  text-align:center;
+  padding-top:10px;
 }
 
 .nav ul {
@@ -8,10 +18,12 @@
     padding: 0;
     overflow: hidden;
     background-color: #333;
+  
 }
 
 .nav li {
     float: right;
+    padding: 5px 20px;
 }
 
 .nav li a {
@@ -26,17 +38,29 @@
 .nav li a:hover {
     background-color: #111;
 }
-
-.about {
-
+.active {
+    background-color: #4CAF50;
 }
 
-.porfolio-images {
+.about {
+padding: 20px;
+  background-color: #aaa;
+  color: #fff;
+  font-weight:bolder;
+}
 
+.portfolio-images {
+  
+}
+
+#image1 {
+  max-width: 70%;
+  margin: auto;
+  display: block;
 }
 
 .contact {
-
+text-align: center;
 }
 
 .footer {
