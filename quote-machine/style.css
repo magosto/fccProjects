@@ -20,17 +20,46 @@ body {
   text-align:center;
 }
 
-.quote-name {
+.author {
   margin-right:10%;
   margin-bottom: 20px;
   text-align:right;
 }
 
-.twitter-btn {
-  margin-left:10%;
+
+.fa {
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    font-size:80px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+    margin-left: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 10%;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
 }
 
 .quote-btn {
   float: right;
   margin-right: 10%;
+  padding
 }
