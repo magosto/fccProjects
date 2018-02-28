@@ -1,0 +1,17 @@
+body {
+  background-color: #aaa;
+  margin: 0;
+  padding: 0;
+}
+
+.quote-box {
+  height: 250px;
+  width: 600px;
+  background-color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  margin-left: -125px; /* margin is -0.5 * dimension */
+  margin-top: -25px;
+
+}
