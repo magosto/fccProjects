@@ -13,5 +13,24 @@ body {
   left: 42%;
   margin-left: -125px; /* margin is -0.5 * dimension */
   margin-top: -25px;
+}
 
+.quote {
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.quote-name {
+  margin-right:10%;
+  margin-bottom: 20px;
+  text-align:right;
+}
+
+.twitter-btn {
+  margin-left:10%;
+}
+
+.quote-btn {
+  float: right;
+  margin-right: 10%;
 }
