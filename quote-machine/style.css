@@ -2,6 +2,7 @@ body {
   background-color: #aaa;
   margin: 0;
   padding: 0;
+  font-family: Arial;
 }
 
 .quote-box {
@@ -13,6 +14,7 @@ body {
   left: 42%;
   margin-left: -125px; /* margin is -0.5 * dimension */
   margin-top: -25px;
+  border-radius: 2%;
 }
 
 .quote {
@@ -36,6 +38,7 @@ body {
     text-decoration: none;
     border-radius: 20%;
     margin-left: 5px;
+    margin-top: 90px;
 }
 
 /* Add a hover effect if you want */
@@ -61,5 +64,7 @@ body {
 .quote-btn {
   float: right;
   margin-right: 10%;
-  padding
+  margin-top: 90px;
+  padding: 7px;
+  border-radius: 8%;
 }

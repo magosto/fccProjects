@@ -1,3 +1,4 @@
+//Random color funtion to the elements
 function chBackcolor() {
   var randomColor = getRandomColor();
    document.body.style.background =randomColor;
@@ -6,11 +7,19 @@ function chBackcolor() {
   document.getElementById("new-quote").style.background=randomColor;
 }
 
+//generate a random color
 function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
+  var cssHSL = "hsl(" + 360 * Math.random() + ',' +
+      (25 + 70 * Math.random()) + '%,' +
+      (55 + 10 * Math.random()) + '%)';
+      return cssHSL;
   }
-  return color;
-}
+//fade out query effect
+/*
+  $(".quote-btn").click(function(){
+    $("body").fadeOut();
+    $("#facebook").fadeOut();
+    $("#twitter").fadeOut("slow");
+    $("#new-quote").fadeOut(3000);
+  });
+  */
