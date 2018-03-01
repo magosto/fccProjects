@@ -1,11 +1,11 @@
 body {
-  background-color: #aaa;
+  background-color: #73a9ae;
   margin: 0;
   padding: 0;
   font-family: Arial;
 }
 
-.quote-box {
+#quote-box {
   height: 250px;
   width: 600px;
   background-color: #fff;
@@ -15,17 +15,24 @@ body {
   margin-left: -125px; /* margin is -0.5 * dimension */
   margin-top: -25px;
   border-radius: 2%;
+
 }
 
-.quote {
-  margin-bottom: 20px;
+#quote {
+  margin-bottom: 10px;
   text-align:center;
+  font-size: 35px;
+  color: #73a9ae
+
+
 }
 
-.author {
+#author {
   margin-right:10%;
   margin-bottom: 20px;
   text-align:right;
+  font-size: 15px;
+  color: #73a9ae
 }
 
 
@@ -38,7 +45,8 @@ body {
     text-decoration: none;
     border-radius: 20%;
     margin-left: 5px;
-    margin-top: 90px;
+    margin-top: auto;
+
 }
 
 /* Add a hover effect if you want */
@@ -50,21 +58,23 @@ body {
 
 /* Facebook */
 .fa-facebook {
-    background: #3B5998;
+     background-color: #73a9ae;
     color: white;
     margin-left: 10%;
 }
 
 /* Twitter */
 .fa-twitter {
-    background: #55ACEE;
+     background-color: #73a9ae;
     color: white;
 }
 
 .quote-btn {
   float: right;
   margin-right: 10%;
-  margin-top: 90px;
+  margin-top: auto;
   padding: 7px;
   border-radius: 8%;
+  color: #fff;
+  background-color: #73a9ae
 }
