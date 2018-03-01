@@ -1,5 +1,6 @@
 body {
   background-color: #73a9ae;
+  transition:background-color 0.5s ease;
   margin: 0;
   padding: 0;
   font-family: Arial;
@@ -22,9 +23,8 @@ body {
   margin-bottom: 10px;
   text-align:center;
   font-size: 35px;
-  color: #73a9ae
-
-
+  color: #73a9ae;
+  transition:color 0.5s ease;
 }
 
 #author {
@@ -32,7 +32,8 @@ body {
   margin-bottom: 20px;
   text-align:right;
   font-size: 15px;
-  color: #73a9ae
+  color: #73a9ae;
+  transition:color 0.5s ease;
 }
 
 
@@ -46,7 +47,6 @@ body {
     border-radius: 20%;
     margin-left: 5px;
     margin-top: auto;
-
 }
 
 /* Add a hover effect if you want */
@@ -54,19 +54,19 @@ body {
     opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
-
 /* Facebook */
 .fa-facebook {
-     background-color: #73a9ae;
-    color: white;
-    margin-left: 10%;
+  background-color: #73a9ae;
+  transition:background-color 0.5s ease;
+  color: white;
+  margin-left: 10%;
 }
 
 /* Twitter */
 .fa-twitter {
-     background-color: #73a9ae;
-    color: white;
+  background-color: #73a9ae;
+  transition:background-color 0.5s ease;
+  color: white;
 }
 
 .quote-btn {
@@ -76,5 +76,6 @@ body {
   padding: 7px;
   border-radius: 8%;
   color: #fff;
-  background-color: #73a9ae
+  background-color: #73a9ae;
+  transition:background-color 0.5s ease;
 }

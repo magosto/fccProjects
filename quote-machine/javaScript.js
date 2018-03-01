@@ -11,16 +11,16 @@ var quoteArray = [ ["Don’t worry if it doesn’t work right. If everything did
 ["The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.","- Seymour Cray"],
 ["I don't care if it works on your machine! We are not shipping your machine!","- Vidiu Platon"] ];
 
-//Random color funtion to the elements
 function chBackcolor() {
   var randomColor = getRandomColor();
    document.body.style.background =randomColor;
+  document.getElementById("quote").style.color=randomColor;
+  document.getElementById("author").style.color=randomColor;
   document.getElementById("facebook").style.background=randomColor;
   document.getElementById("twitter").style.background=randomColor;
   document.getElementById("new-quote").style.background=randomColor;
 }
 
-//generate a random color
 function getRandomColor() {
   var cssHSL = "hsl(" + 360 * Math.random() + ',' +
       (25 + 70 * Math.random()) + '%,' +
@@ -28,30 +28,23 @@ function getRandomColor() {
       return cssHSL;
   }
 
-//change quote - passed in a boolean
-function changeQuote(toChange) {
-    //document.getElementById('quote').innerHTML = "test";
-    //var oldQuote = document.getElementById('quote').innerHTML;
-    //var oldAuthor = document.getElementById('author').innerHTML;
-    var randomQuote = getRandomQuote();
-    var newQuote = randomQuote[0];
-    var newAuthor = randomQuote[1];
-    document.getElementById('quote').innerHTML = quote;
-    document.getElementById('author').innerHTML = author;
+//change quote when button is clicke - only button is new quote button
+$(document).ready(function() {
+  $("button").click(function test() {
+    $('#quote, #author').fadeOut(500, function() {
+        var randomQuote = getRandomQuote();
+        var newQuote = randomQuote[0];
+        var newAuthor = randomQuote[1];
 
-}
+        $("#quote").text(newQuote).fadeIn(1000);
+        $("#author").text(newAuthor).fadeIn(1000);
+    });
+  });
+});
+
 
 //randomly select quote from array and return it
 function getRandomQuote() {
   var quoteWithName = quoteArray[Math.floor(Math.random() * 10)];
   return quoteWithName;
 }
-//fade out query effect
-/*
-  $(".quote-btn").click(function(){
-    $("body").fadeOut();
-    $("#facebook").fadeOut();
-    $("#twitter").fadeOut("slow");
-    $("#new-quote").fadeOut(3000);
-  });
-  */
